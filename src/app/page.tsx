@@ -1,8 +1,26 @@
-export default function Home() {
+import SignInButton from "@/app/_components/SignInButton";
+import URLShortenForm from "@/app/_components/URLShortenerForm";
+import { auth } from "../../auth";
+import SignOutButton from "@/app/_components/SignOutButton";
+
+export default async function Home() {
+	const session = await auth();
+
+	console.log(session);
 	return (
-		<div>
+		<div className={"container p-1"}>
+			<header className={"flex justify-center"}>
+				<h1>URL Shortener</h1>
+			</header>
+
 			<main>
-				<header>URL Shortener</header>
+				<section>
+					<URLShortenForm />
+					<div className="container flex justify-center">
+						{session ? <SignOutButton /> : <SignInButton />}
+					</div>
+					<pre>{JSON.stringify(session, null, 2)}</pre>
+				</section>
 			</main>
 		</div>
 	);

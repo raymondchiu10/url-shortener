@@ -3,7 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
 	title: "URL Shortener - Raymond Chiu",
-	description: "URL Shortener for personal projects",
+	description: "Raymond Chiu's URL Shortener for personal projects",
+	openGraph: {
+		title: "URL Shortener - Raymond Chiu",
+		description: "Raymond Chiu's URL Shortener for personal projects",
+	},
 };
 
 export default function RootLayout({
@@ -13,7 +17,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className="min-h-full flex flex-col">{children}</body>
+			<body className="min-h-full flex justify-center">{children}</body>
 		</html>
 	);
 }
