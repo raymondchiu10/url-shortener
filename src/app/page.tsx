@@ -6,7 +6,6 @@ import SignOutButton from "@/app/_components/SignOutButton";
 export default async function Home() {
 	const session = await auth();
 
-	console.log(session);
 	return (
 		<div className={"container p-1"}>
 			<header className={"flex justify-center"}>
@@ -19,7 +18,6 @@ export default async function Home() {
 					<div className="container flex justify-center">
 						{session ? <SignOutButton /> : <SignInButton />}
 					</div>
-					<pre>{JSON.stringify(session, null, 2)}</pre>
 				</section>
 			</main>
 		</div>
