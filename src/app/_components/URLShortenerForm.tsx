@@ -82,7 +82,7 @@ export default function UrlShortenerForm() {
 					disabled={isLoading}
 					className={clsx(
 						// Base Button Styles
-						"h-11 px-6 rounded-xl font-medium text-white transition-all flex items-center justify-center gap-2 active:scale-[0.98]",
+						"h-11 px-6 rounded-xl font-medium text-white transition-all flex items-center justify-center gap-2 active:scale-[0.98] cursor-pointer ",
 
 						// Simple inline conditionals work too!
 						isLoading
@@ -106,7 +106,7 @@ export default function UrlShortenerForm() {
 					</div>
 					<button
 						onClick={() => navigator.clipboard.writeText(shortUrl)}
-						className="shrink-0 text-xs font-semibold px-3 py-1.5 bg-white border border-emerald-200 rounded-lg text-emerald-700 shadow-sm hover:bg-emerald-50 transition-colors"
+						className="cursor-pointer shrink-0 text-xs font-semibold px-3 py-1.5 bg-white border border-emerald-200 rounded-lg text-emerald-700 shadow-sm hover:bg-emerald-50 transition-colors"
 					>
 						Copy
 					</button>
