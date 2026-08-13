@@ -10,7 +10,9 @@ export default function SignOutButton() {
 				});
 			}}
 		>
-			<button type="submit">Sign out</button>
+			<button className="cursor-pointer" type="submit">
+				Sign out
+			</button>
 		</form>
 	);
 }

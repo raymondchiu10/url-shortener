@@ -10,7 +10,9 @@ export default function SignInButton() {
 				});
 			}}
 		>
-			<button type="submit">Sign in with GitHub</button>
+			<button className="cursor-pointer" type="submit">
+				Sign in with GitHub
+			</button>
 		</form>
 	);
 }
