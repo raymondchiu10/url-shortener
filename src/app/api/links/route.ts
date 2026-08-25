@@ -1,7 +1,7 @@
 import { Prisma } from "@/generated/prisma/client";
 import { prisma } from "@/lib/prisma";
 import { randomBytes } from "node:crypto";
-import { auth } from "../../../../auth";
+import { auth } from "@/auth";
 
 export async function POST(request: Request) {
 	const session = await auth();
