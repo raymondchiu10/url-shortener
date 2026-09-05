@@ -51,3 +51,6 @@ coverage
 .*.production
 
 /src/generated/prisma
+
+generate-api-key
+generate-api-key/*
