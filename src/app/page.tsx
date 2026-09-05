@@ -1,6 +1,6 @@
 import SignInButton from "@/app/_components/SignInButton";
 import URLShortenForm from "@/app/_components/URLShortenerForm";
-import { auth } from "../../auth";
+import { auth } from "@/auth";
 import SignOutButton from "@/app/_components/SignOutButton";
 
 export default async function Home() {

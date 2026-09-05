@@ -1,5 +1,5 @@
 import { prisma } from "@/lib/prisma";
-import { auth } from "../../../../../auth";
+import { auth } from "@/auth";
 
 export async function DELETE(request: Request, { params }: { params: Promise<{ id: string }> }) {
 	try {
